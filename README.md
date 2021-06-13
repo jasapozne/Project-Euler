@@ -1,2 +1,2 @@
 # Project-Euler
-Repozitorij z rešenimi nalogami s strani Project Euler
+Repozitorij s kodo rešenih nalog, s strani Project Euler
