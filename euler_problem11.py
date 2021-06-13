@@ -53,4 +53,4 @@ def leva_diag(matrika):
 def max_skupaj(matrika):
     return max(vrstica(matrika),stolpec(matrika),desna_diag(matrika),leva_diag(matrika))
 
-print(max(vrstica(matrika),stolpec(matrika),desna_diag(matrika),leva_diag(matrika)))
+print(max_skupaj(matrika))
