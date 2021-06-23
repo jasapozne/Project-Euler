@@ -4,7 +4,7 @@ def prestopno_leto(leto):
     else:
         return False
 
-dnevi = ["pon","tor","sre","cet","pet","sob","ned"]
+dnevi = ["tor","sre","cet","pet","sob","ned","pon"]
 vsi_dnevi = dnevi * 5218
 vsi_dnevi_v_letu = vsi_dnevi[:len(vsi_dnevi)-1]
 #1901 se začne v torek
@@ -30,7 +30,7 @@ def dnevi_v_letih():
     jan = mar = maj = julij = avg = okt = dec = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
     feb1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28]
     feb2 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29]
-    #še bolkše bi to bilo zapisati z zanko in range!
+    #še boljše bi to bilo zapisati z zanko in range!
     leto = 1901
     sez = []
     while leto < 2001:
@@ -56,7 +56,7 @@ def dnevi_v_letih():
 def koliko():
     kolicina = 0
     for dan in zip(dnevi_v_letih(),vsi_dnevi_v_letu):
-        if dan == (1,"pon"):
+        if dan == (1,"ned"):
             kolicina += 1
     return kolicina
 
