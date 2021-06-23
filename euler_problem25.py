@@ -1,10 +1,9 @@
 def fibonacci(n):
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1   
-    else:
-        return fibonacci(n-1) + fibonacci(n-2)
+    a = 0
+    b = 1
+    while a <= n:
+        a, b = b, a + b
+    return a
 
 def fibonacci_1000_stevk():
     k = 11
